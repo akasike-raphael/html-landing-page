@@ -1,0 +1,92 @@
+body {
+    width: 100%;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: pink;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    position: sticky;
+    margin-bottom: 2rem;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(80, 228, 233, 0.74);
+    transition: 0.4s ease;
+    position: relative;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: white;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -4px;
+    right: 20px;
+}
+#hero {
+    background-image: url(image/image.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+}
+.text{
+    padding-top: 10rem;
+    padding-left: 5rem;
+}
+.text h1 {
+    font-weight: 600;
+    font-size: 60px;
+    color: white;
+}
+.text h3{
+    font-weight: 600;
+    font-size: 30px;
+    color: rgba(80, 228, 233, 0.74);
+    padding-top: -4px;
+}
+.text p{
+    font-weight: 200;
+    color: black;
+}
+.social-link img{
+    padding-top: 10rem;
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
+}
+.social-link{
+    text-align: center;
+    margin-top: 8rem;
+}
+/* .text {
+    
+    padding-left: 6rem;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+} */
